@@ -1,30 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CAR FOR YOU coding challenge
 
-## Getting Started
+We've set up this repository for you so you can focus on solving the challenge instead of repeating new project setup boilerplate.
 
-First, run the development server:
+This setup is pretty close to what we use in our daily jobs, feel free to use as much of the provided tools as possible and change (or completely ignore) ones you want (e.g. if you'd rather write javascript just use `js` or `jsx` as the file extension).
+
+## What will you need?
+
+- a computer you can work on
+- [git](https://git-scm.com/downloads)
+- [nodejs](https://nodejs.org/en/download/)
+- your favourite editor
+- network connection
+- around 3-4 hours of time
+
+## How to start
+
+Download the project:
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone https://github.com/carforyou/fe-coding-challenge.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can use the `Download Zip` button too, the advantage of using `git` is that you can show us the intermediate states of your work and a bit of your process.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Install the dependencies:
 
-## Learn More
+```bash
+$ npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+$ npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000) with your browser for further instructions.
 
-## Deploy on Vercel
+## Some helpful links and documentation
+You don't need to read all of these, but they might be helpful if you'd like to know more about the tools we use. As mentioned above - it's okay to ignore any pre-installed dependencies and move forward with another tool you're more comfortable with.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Catalogue service](https://catalogue-service.preprod.carforyou.ch/swagger-ui/index.html#/Product%20Catalogue) - our API that you'll be using to solve this challenge
+- [React](https://reactjs.org/docs) - a JavaScript library for building user interfaces
+- [Next.js](https://nextjs.org/docs) - a React framework that we're using
+- [tailwindcss](https://tailwindcss.com/docs) - a utility-first CSS framework
+- [Jest](https://jestjs.io/docs/en/getting-started) - a JavaScript testing framework
+- [Cypress](https://docs.cypress.io/) - an end to end testing framework
+- [@testing-library](https://testing-library.com/docs/intro) - a family of packages that helps with testing UI in a user centric way
