@@ -23,14 +23,12 @@ const Index: NextPage<{}> = () => {
             <div className="italic w-full md:w-1/3">e.g. Golf</div>
           </div>
           <div className="flex flex-row flex-wrap p-1 bg-gray-400">
-            <div className="font-bold w-1/4 md:w-1/6">Type</div>
+            <div className="font-bold w-1/4 md:w-1/6">Listing</div>
             <div className="w-3/4 md:w-1/2">
-              is a particular configuration of a chosen model, <br />
-              it holds information about production years, engine size, drive
-              type, fuel type, amount of doors, available options, etc.
-            </div>
-            <div className="italic w-full md:w-1/3">
-              e.g. Golf II 1.8 16V GTI
+              is an advertisement on the platform, <br />
+              it holds information about the car (production year, engine size,
+              drive type, fuel type, amount of doors, options, mileage, etc.),
+              as well as the information relevant for the ad itself (e.g. price)
             </div>
           </div>
         </div>
@@ -38,25 +36,25 @@ const Index: NextPage<{}> = () => {
       <section className="space-y-5">
         <h2 className="font-bold text-xl">Description</h2>
         <p>
-          One of the first steps of manually listing a car on our platform is
-          choosing the correct type. To be able to select one from the list, the
-          user needs to provide make and model of their car first.
+          One of the most popular way of browsing cars is filtering by make and
+          model. To be able to select a model the user needs to provide a make
+          first.
         </p>
         <p>
-          As a user, I would like to select the car type to be able to start a
-          manual listing process.
+          As a user, I would like to see cars of the make and model I&apos;m
+          interested in.
         </p>
         <h3 className="font-semibold text-lg">The flow</h3>
         <p>
           At first, the user needs to choose a <strong>Make</strong>. The select
           should provide{" "}
           <a
-            href="https://catalogue-service.preprod.carforyou.ch/swagger-ui/index.html#/Product%20Catalogue/getAllMakesUsingGET"
+            href="https://inventory-search-service.preprod.carforyou.ch/swagger-ui/index.html#/Current%20Makes%2FModels/getCurrentMakesUsingGET"
             target="_blank"
             rel="noreferrer"
             className="underline text-indigo-700"
           >
-            all makes available in our product catalogue
+            all for which there currently are listings on the platform
           </a>{" "}
           as valid options. See{" "}
           <a
@@ -93,28 +91,28 @@ const Index: NextPage<{}> = () => {
           </a>
           ) - they can be fetched from{" "}
           <a
-            href="https://catalogue-service.preprod.carforyou.ch/swagger-ui/index.html#/Product%20Catalogue/getModelsUsingGET_1"
+            href="https://inventory-search-service.preprod.carforyou.ch/swagger-ui/index.html#/Current%20Makes%2FModels/getCurrentModelsUsingGET"
             target="_blank"
             rel="noreferrer"
             className="underline text-indigo-700"
           >
-            the product catalogue
+            the search service.
           </a>
           . If the make select is cleared model select should return to its
           default state.
         </p>
         <p>
           After choosing the model, we have enough information to proceed to the
-          next step - type selection. Please provide visual confirmation to the
-          user that they can continue the process. On{" "}
+          next step - listing search. Please provide a visual confirmation to
+          the user that they can continue the process. On{" "}
           <a
             href="#fig-4"
             className="text-indigo-700 border-current border-dashed border-b"
           >
             Fig. 4
           </a>{" "}
-          decided to show a list of types, but any other visual feedback is good
-          too.
+          we decided to show a number of listings available on the platform, but
+          any other visual feedback is good too.
         </p>
         <div className="flex flex-wrap">
           <figure
@@ -162,11 +160,11 @@ const Index: NextPage<{}> = () => {
           >
             <img
               className="m-auto"
-              src={require("~/assets/images/types.png")}
+              src={require("~/assets/images/count.png")}
             />
             <figcaption className="text-center">
               <strong>Fig. 4</strong>&nbsp;-&nbsp;
-              <span className="italic">List of types</span>
+              <span className="italic">Listings count</span>
             </figcaption>
           </figure>
         </div>
