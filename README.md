@@ -40,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser for furthe
 ## Some helpful links and documentation
 You don't need to read all of these, but they might be helpful if you'd like to know more about the tools we use. As mentioned above - it's okay to ignore any pre-installed dependencies and move forward with another tool you're more comfortable with.
 
-- [Catalogue service](https://catalogue-service.preprod.carforyou.ch/swagger-ui/index.html#/Product%20Catalogue) - our API that you'll be using to solve this challenge
+- [Search service](https://inventory-search-service.preprod.carforyou.ch/swagger-ui/index.html#/Current%20Makes/Models) - our API that you'll be using to solve this challenge
 - [React](https://reactjs.org/docs) - a JavaScript library for building user interfaces
 - [Next.js](https://nextjs.org/docs) - a React framework that we're using
 - [tailwindcss](https://tailwindcss.com/docs) - a utility-first CSS framework
